@@ -11,13 +11,16 @@ const ThemeToggle = () => {
       variant="ghost"
       size="icon"
       onClick={toggleTheme}
-      className="text-portfolio-text-primary hover:text-portfolio-accent transition-colors"
+      className="text-foreground hover:text-primary transition-colors relative overflow-hidden"
+      title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
     >
-      {theme === 'dark' ? (
-        <Sun className="h-5 w-5" />
-      ) : (
-        <Moon className="h-5 w-5" />
-      )}
+      <div className="relative">
+        {theme === 'dark' ? (
+          <Sun className="h-5 w-5 transition-transform duration-300 rotate-0 scale-100" />
+        ) : (
+          <Moon className="h-5 w-5 transition-transform duration-300 rotate-0 scale-100" />
+        )}
+      </div>
     </Button>
   );
 };

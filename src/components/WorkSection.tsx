@@ -36,13 +36,13 @@ const WorkSection = () => {
   ];
 
   return (
-    <section id="work" className="py-20 bg-portfolio-dark-secondary/30">
+    <section id="work" className="py-20 bg-gradient-to-br from-background via-muted/20 to-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6 text-gradient animate-fade-in">
             Featured Projects
           </h2>
-          <p className="text-xl text-portfolio-text-secondary max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Explore my creative journey through these prompt-driven design solutions
           </p>
         </div>
@@ -59,7 +59,7 @@ const WorkSection = () => {
 
         <div className="text-center">
           <Link to="/work">
-            <Button className="bg-portfolio-accent hover:bg-portfolio-accent-hover text-white px-8 py-3 text-lg">
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg">
               View All Projects
             </Button>
           </Link>
