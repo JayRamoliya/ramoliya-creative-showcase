@@ -1,11 +1,14 @@
 
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import ThemeToggle from './ThemeToggle';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +20,11 @@ const Navigation = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -30,24 +38,24 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-display font-bold text-gradient">
+          <Link to="/" className="text-2xl font-display font-bold text-gradient">
             Jay Ramoliya
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection('home')}
               className="text-portfolio-text-secondary hover:text-portfolio-text-primary transition-colors"
             >
               Home
             </button>
-            <button
-              onClick={() => scrollToSection('work')}
+            <Link
+              to="/work"
               className="text-portfolio-text-secondary hover:text-portfolio-text-primary transition-colors"
             >
               Work
-            </button>
+            </Link>
             <button
               onClick={() => scrollToSection('about')}
               className="text-portfolio-text-secondary hover:text-portfolio-text-primary transition-colors"
@@ -60,17 +68,21 @@ const Navigation = () => {
             >
               Contact
             </button>
+            <ThemeToggle />
           </div>
 
           {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden text-portfolio-text-primary"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </Button>
+          <div className="md:hidden flex items-center space-x-2">
+            <ThemeToggle />
+            <Button
+              variant="ghost"
+              size="icon"
+              className="text-portfolio-text-primary"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -83,12 +95,13 @@ const Navigation = () => {
               >
                 Home
               </button>
-              <button
-                onClick={() => scrollToSection('work')}
+              <Link
+                to="/work"
                 className="text-portfolio-text-secondary hover:text-portfolio-text-primary transition-colors text-left"
+                onClick={() => setIsOpen(false)}
               >
                 Work
-              </button>
+              </Link>
               <button
                 onClick={() => scrollToSection('about')}
                 className="text-portfolio-text-secondary hover:text-portfolio-text-primary transition-colors text-left"

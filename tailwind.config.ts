@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -71,7 +70,11 @@ export default {
 					'text-primary': '#FFFFFF',
 					'text-secondary': '#A1A1AA',
 					'gradient-start': '#6366F1',
-					'gradient-end': '#8B5CF6'
+					'gradient-end': '#8B5CF6',
+					'light': '#FFFFFF',
+					'light-secondary': '#F8F9FA',
+					'light-text-primary': '#1F2937',
+					'light-text-secondary': '#6B7280'
 				}
 			},
 			borderRadius: {

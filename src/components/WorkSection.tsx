@@ -1,8 +1,10 @@
 
+import { Link } from 'react-router-dom';
+import { Button } from "@/components/ui/button";
 import ProjectCard from './ProjectCard';
 
 const WorkSection = () => {
-  const projects = [
+  const featuredProjects = [
     {
       prompt: "Create a minimalist poster that expresses calm and simplicity.",
       title: "Minimalist Poster Design",
@@ -45,14 +47,22 @@ const WorkSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          {featuredProjects.map((project, index) => (
             <ProjectCard
               key={index}
               {...project}
               animationDelay={`${0.1 * index}s`}
             />
           ))}
+        </div>
+
+        <div className="text-center">
+          <Link to="/work">
+            <Button className="bg-portfolio-accent hover:bg-portfolio-accent-hover text-white px-8 py-3 text-lg">
+              View All Projects
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
