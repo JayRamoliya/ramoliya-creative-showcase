@@ -34,7 +34,7 @@ const ContactSection = () => {
       const whatsappMessage = `*New Contact Form Submission*%0A%0A*Name:* ${encodeURIComponent(formData.name)}%0A*Email:* ${encodeURIComponent(formData.email)}%0A*Message:* ${encodeURIComponent(formData.message)}%0A%0ASent from Jay Ramoliya Portfolio`;
       
       // WhatsApp API URL
-      const whatsappURL = `https://wa.me/916353416521?text=${whatsappMessage}`;
+      const whatsappURL = `https://wa.me/916353716421?text=${whatsappMessage}`;
       
       // Open WhatsApp in new window
       window.open(whatsappURL, '_blank');
@@ -131,33 +131,24 @@ const ContactSection = () => {
                 </h3>
                 
                 <div className="space-y-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
-                      <Mail className="text-primary" size={20} />
-                    </div>
+                  <div className="flex items-center space-x-4 justify-center">
                     <div>
                       <p className="text-muted-foreground text-sm">Email</p>
-                      <p className="text-foreground">jay@ramoliya.design</p>
+                      <p className="text-foreground">ramoliyajay9@gmail.com</p>
                     </div>
                   </div>
 
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
-                      <Instagram className="text-primary" size={20} />
-                    </div>
+                  <div className="flex items-center space-x-4 justify-center">
                     <div>
                       <p className="text-muted-foreground text-sm">Instagram</p>
-                      <p className="text-foreground">@jayramoliya.design</p>
+                      <p className="text-foreground">@jay_ramoliya133</p>
                     </div>
                   </div>
 
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
-                      <Youtube className="text-primary" size={20} />
-                    </div>
+                  <div className="flex items-center space-x-4 justify-center">
                     <div>
                       <p className="text-muted-foreground text-sm">YouTube</p>
-                      <p className="text-foreground">Jay Ramoliya Creative</p>
+                      <p className="text-foreground">-</p>
                     </div>
                   </div>
                 </div>

@@ -206,7 +206,7 @@ const Home = () => {
                         </div>
                         <div>
                           <p className="text-muted-foreground text-sm">Email</p>
-                          <p className="text-foreground font-medium">jay@ramoliya.design</p>
+                          <p className="text-foreground font-medium">ramoliyajay9@gmial.com</p>
                         </div>
                       </div>
 
@@ -216,7 +216,7 @@ const Home = () => {
                         </div>
                         <div>
                           <p className="text-muted-foreground text-sm">Instagram</p>
-                          <p className="text-foreground font-medium">@jayramoliya.design</p>
+                          <p className="text-foreground font-medium">@jay_ramoliya133</p>
                         </div>
                       </div>
 
@@ -226,7 +226,7 @@ const Home = () => {
                         </div>
                         <div>
                           <p className="text-muted-foreground text-sm">YouTube</p>
-                          <p className="text-foreground font-medium">Jay Ramoliya Creative</p>
+                          <p className="text-foreground font-medium">-</p>
                         </div>
                       </div>
                     </div>
@@ -238,12 +238,12 @@ const Home = () => {
                       I typically respond to messages within 24 hours. For urgent projects, feel free to reach out via WhatsApp.
                     </p>
                     <a 
-                      href="https://wa.me/916353416521" 
+                      href="https://wa.me/916353716421" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="inline-flex items-center text-primary hover:text-primary/80 transition-colors"
                     >
-                      WhatsApp: +91 6353416521
+                      WhatsApp: +91 6353716421
                       <ArrowRight className="ml-2" size={16} />
                     </a>
                   </div>
