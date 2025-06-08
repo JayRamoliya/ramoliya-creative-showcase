@@ -139,6 +139,48 @@ const Work = () => {
       imageUrl: "/images/cinematic1.webp"
     },
     {
+      prompt: "A premium 'Monixa' brand T-shirt placed elegantly under a transparent glass dome with mystical purple smoke swirling inside. The T-shirt is neatly folded or displayed on a sleek stand, showcasing its stylish design and Monixa logo clearly. The background is dark and luxurious, emphasizing the glow of the smoke and the quality of the product. A hand wearing a lace glove is lifting the glass dome delicately, adding a touch of fashion and mystery to the scene. The overall mood is high-fashion, cinematic, and magical.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/monixain.webp"
+    },
+    {
+      prompt: "Ultra-realistic portrait of a confident young man wearing a dark navy oversized streetwear t-shirt with a glowing blue mandala pattern and a silver Trishul symbol at the center, black cargo pants, black sunglasses, and a silver chain. He stands casually with hands in his pockets against a clean gradient background (deep navy to sky blue), looking straight at the camera. No text or logos in the background.Use shallow depth of field. Shot on a Canon EOS R5 + RF 85mm f/1.2L lens, studio lighting, 12K resolution, cinematic editorial fashion shoot style.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/shivme.webp"
+    },
+    {
+      prompt: "A high-resolution cinematic design with a deep black background. In the center, the word 'Water' appears as if it is made of water, with realistic water textures, reflections, and light shimmer. The text should float in mid-air, semi-transparent, and glowing gently. Surrounding the text, soft white smoke drifts naturally, blending with the background, adding a dreamy and mysterious effect. The overall composition should be modern, surreal, and atmospheric — as if the word is breathing in the air.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/water.webp"
+    },
+    {
+      prompt: "Design the word Ramoliya in a bold, futuristic glass-style font on a deep black background. The letters should appear semi-transparent, with smooth, reflective glass edges. Inside the glass, infuse glowing neon blue and purple light that softly blends, giving an inner radiance. Add subtle internal glows, soft color bleeding, and realistic reflections to enhance the 3D glass effect. Apply faint, diffused shadows beneath the text to create depth and a floating sensation. The overall vibe should feel high-tech, cyberpunk, and visually striking — perfect for a modern tech or digital brand identity.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/neonramoliya.webp"
+    },
+    {
+      prompt: "Design the word 'Graphics' in highly detailed metallic chrome typography, featuring sharp edges and realistic reflections. The text should appear partially engulfed in swirling smoke and vivid orange flames, with glowing ember particles drifting around it. Add heat distortion and subtle reflections of firelight on the chrome surface to emphasize realism. The background should be a dark, gritty urban scene at night—think rain-soaked pavement, blurred city lights, and industrial textures. Add cinematic lighting with contrasting cool blue shadows and fiery warm highlights, creating a powerful, dramatic mood.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/fire.webp"
+    },
+    {
+      prompt: "",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/.webp"
+    },
+    {
       prompt: "",
       title: "",
       description: "",
