@@ -1,198 +1,279 @@
-
-import Navigation from '@/components/Navigation';
-import ProjectCard from '@/components/ProjectCard';
-import Footer from '@/components/Footer';
+import Navigation from "@/components/Navigation";
+import ProjectCard from "@/components/ProjectCard";
+import Footer from "@/components/Footer";
+import { useState } from "react";
 
 const Work = () => {
   const projects = [
     {
-      prompt: "Design a luxury, elegant, and timeless black and white logo for a brand named Ramoliya. The logo should have a sophisticated and minimalist look with clean lines and a refined serif or modern calligraphy font. Include a simple yet memorable icon or monogram that reflects exclusivity, prestige, and high-end quality. The overall design should feel classic and premium, suitable for a luxury brand in fashion, jewelry, or lifestyle sectors.",
+      prompt:
+        "Design a luxury, elegant, and timeless black and white logo for a brand named Ramoliya. The logo should have a sophisticated and minimalist look with clean lines and a refined serif or modern calligraphy font. Include a simple yet memorable icon or monogram that reflects exclusivity, prestige, and high-end quality. The overall design should feel classic and premium, suitable for a luxury brand in fashion, jewelry, or lifestyle sectors.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "images/ramoliya logo.webp"
+      imageUrl: "images/ramoliya logo.webp",
     },
     {
-      prompt: "Redesign the logo for Wings Tech, an IT Services and IT Consulting company. The new logo should keep the essence of wings symbolizing speed, agility, and innovation, but with a more modern, sleek, and minimalist look. Use a clean, professional style with a black and white or monochrome palette to convey sophistication and trustworthiness. Incorporate a contemporary sans-serif font for the text 'Wings Tech' that is bold and easily readable. The design should reflect technology, digital transformation, and consultancy professionalism while maintaining simplicity and elegance.",
+      prompt:
+        "Redesign the logo for Wings Tech, an IT Services and IT Consulting company. The new logo should keep the essence of wings symbolizing speed, agility, and innovation, but with a more modern, sleek, and minimalist look. Use a clean, professional style with a black and white or monochrome palette to convey sophistication and trustworthiness. Incorporate a contemporary sans-serif font for the text 'Wings Tech' that is bold and easily readable. The design should reflect technology, digital transformation, and consultancy professionalism while maintaining simplicity and elegance.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "images/wings tech.webp"
+      imageUrl: "images/wings tech.webp",
     },
     {
-      prompt: "A 3D-rendered poster with the phrase 'Wings Tech' in bold, dripping pink letters. The background is dark gray with abstract pink designs and splatters. The text appears to be melting, giving it a dynamic and edgy look. The overall design is modern and attention-grabbing, conveying a sense of boldness and urgency.",
+      prompt:
+        "A 3D-rendered poster with the phrase 'Wings Tech' in bold, dripping pink letters. The background is dark gray with abstract pink designs and splatters. The text appears to be melting, giving it a dynamic and edgy look. The overall design is modern and attention-grabbing, conveying a sense of boldness and urgency.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/pink wings tech.webp"
+      imageUrl: "/images/pink wings tech.webp",
     },
     {
-      prompt: "A conceptual and artistic fashion advertisement. A small tree with bare branches growing out of a large, broken white egg shell planter. The egg has the brand name 'Monixa' written on it in bold black modern font. The branches display stylish clothing items—two fashionable jackets hanging neatly on wooden hangers and two pairs of leather shoes hanging by laces. The background is minimalistic and pure white, giving the scene a clean, elegant look. The overall composition should be surreal, high-end, and modern, suitable for a luxury fashion brand ad.",
+      prompt:
+        "A conceptual and artistic fashion advertisement. A small tree with bare branches growing out of a large, broken white egg shell planter. The egg has the brand name 'Monixa' written on it in bold black modern font. The branches display stylish clothing items—two fashionable jackets hanging neatly on wooden hangers and two pairs of leather shoes hanging by laces. The background is minimalistic and pure white, giving the scene a clean, elegant look. The overall composition should be surreal, high-end, and modern, suitable for a luxury fashion brand ad.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/monixa adve.webp"
+      imageUrl: "/images/monixa adve.webp",
     },
     {
-      prompt: "A modern and artistic product advertisement. A thermal receipt printer is printing a white receipt. The top of the receipt says 'NEW ORDER' in bold black font, followed by a barcode. In the center of the receipt is an image of a stylish beige T-shirt with the word 'Monixa' written across the chest in clean, black modern typography. Below the image, the text reads 'real beauty' in a simple serif font. The background is in soft beige tones, giving a minimalist and elegant look suitable for a fashion or lifestyle brand ad.",
+      prompt:
+        "A modern and artistic product advertisement. A thermal receipt printer is printing a white receipt. The top of the receipt says 'NEW ORDER' in bold black font, followed by a barcode. In the center of the receipt is an image of a stylish beige T-shirt with the word 'Monixa' written across the chest in clean, black modern typography. Below the image, the text reads 'real beauty' in a simple serif font. The background is in soft beige tones, giving a minimalist and elegant look suitable for a fashion or lifestyle brand ad.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/monixa order.webp"
+      imageUrl: "/images/monixa order.webp",
     },
     {
-      prompt: "Design a modern and minimalist logo for a brand named Netflix. The logo should be clean, geometric, and suitable for a tech startup. Use a professional color palette like shades of blue, black, and white. The design should include a simple icon or monogram that reflects innovation, connectivity, or digital transformation. The typography should be bold, sans-serif, and easily readable. The overall look should feel futuristic and premium, yet minimal.",
+      prompt:
+        "Design a modern and minimalist logo for a brand named Netflix. The logo should be clean, geometric, and suitable for a tech startup. Use a professional color palette like shades of blue, black, and white. The design should include a simple icon or monogram that reflects innovation, connectivity, or digital transformation. The typography should be bold, sans-serif, and easily readable. The overall look should feel futuristic and premium, yet minimal.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/netflix.webp"
+      imageUrl: "/images/netflix.webp",
     },
     {
-      prompt: "3D typography artwork with the phrase 'Ramoliya' formed from vibrant, rainbow-colored clouds and smoke. The text is sculpted from colorful, puffy, and fluffy material that looks like dripping paint and cotton candy. Each letter is seamlessly blended into a dynamic cloud mass with a realistic, soft texture. The background is dark and moody to make the colors pop. Ultra-detailed, hyper-realistic, surreal, dreamlike composition.",
+      prompt:
+        "3D typography artwork with the phrase 'Ramoliya' formed from vibrant, rainbow-colored clouds and smoke. The text is sculpted from colorful, puffy, and fluffy material that looks like dripping paint and cotton candy. Each letter is seamlessly blended into a dynamic cloud mass with a realistic, soft texture. The background is dark and moody to make the colors pop. Ultra-detailed, hyper-realistic, surreal, dreamlike composition.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/3dramoliya.webp"
+      imageUrl: "/images/3dramoliya.webp",
     },
     {
-      prompt: "Create a poster with a 9:16 aspect ratio. A pill with green color leetcode on top and transparent at the bottom, featuring the printed leetcode logo. Inside the pill, include a large amount of 500+ badge. black background.",
+      prompt:
+        "Create a poster with a 9:16 aspect ratio. A pill with green color leetcode on top and transparent at the bottom, featuring the printed leetcode logo. Inside the pill, include a large amount of 500+ badge. black background.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/pill.webp"
+      imageUrl: "/images/pill.webp",
     },
     {
-      prompt: "A luxurious and dreamy fashion advertisement featuring an ornate golden carousel. Instead of traditional horses, the carousel has elegant brown designer T-shirt with matching blazers displayed on golden poles. The T-shirt rotate gracefully under soft sunlight in an open-air palace courtyard surrounded by vines and arches. The brand name 'MONIXA' appears at the top in gold capital letters. The atmosphere should be fairytale-like, sophisticated, and high-end, evoking luxury and fantasy.",
+      prompt:
+        "A luxurious and dreamy fashion advertisement featuring an ornate golden carousel. Instead of traditional horses, the carousel has elegant brown designer T-shirt with matching blazers displayed on golden poles. The T-shirt rotate gracefully under soft sunlight in an open-air palace courtyard surrounded by vines and arches. The brand name 'MONIXA' appears at the top in gold capital letters. The atmosphere should be fairytale-like, sophisticated, and high-end, evoking luxury and fantasy.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/monix tshirt.webp"
+      imageUrl: "/images/monix tshirt.webp",
     },
     {
-      prompt: "Create a trendy and eye-catching advertising graphic for Monixa T-shirts. The design should reflect modern fashion vibes with a clean and stylish look. Use bold typography featuring the brand name 'Monixa' prominently, paired with minimalist but fashionable elements like abstract shapes or subtle textures. Incorporate a color palette that matches the Monixa brand identity (neutral tones with pops of vibrant colors like coral or teal). The overall style should be youthful, fresh, and energetic to attract young fashion-conscious customers. Include a subtle call-to-action like ‘Shop Now’ or ‘Feel the Style’.",
+      prompt:
+        "Create a trendy and eye-catching advertising graphic for Monixa T-shirts. The design should reflect modern fashion vibes with a clean and stylish look. Use bold typography featuring the brand name 'Monixa' prominently, paired with minimalist but fashionable elements like abstract shapes or subtle textures. Incorporate a color palette that matches the Monixa brand identity (neutral tones with pops of vibrant colors like coral or teal). The overall style should be youthful, fresh, and energetic to attract young fashion-conscious customers. Include a subtle call-to-action like ‘Shop Now’ or ‘Feel the Style’.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/monixa style.webp"
+      imageUrl: "/images/monixa style.webp",
     },
     {
-      prompt: "Act as if you are an ads creative graphic designer. You need to design a social media post for an Instagram advertisement featuring a Pepsi cold drink can. The design should include be a attractive holding the Pepsi can in her hand, showcasing a sweet smile. The woman should be dressed in trekking attire, and the background should feature mountains. Additionally, the image should be hyper-realistic and in high definition.",
+      prompt:
+        "Act as if you are an ads creative graphic designer. You need to design a social media post for an Instagram advertisement featuring a Pepsi cold drink can. The design should include be a attractive holding the Pepsi can in her hand, showcasing a sweet smile. The woman should be dressed in trekking attire, and the background should feature mountains. Additionally, the image should be hyper-realistic and in high definition.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/pepsi.webp"
+      imageUrl: "/images/pepsi.webp",
     },
     {
-      prompt: "with a black tie, evening time arms crossed. To my right, Virat Kohli resting shoulder to shoulder with me in a black suit with a white shirt, The street is empty and dramatic. Moody lighting with a 35mm film look. Shallow depth of field, sharp focus on the three of us. Aspect ratio 9:16.",
+      prompt:
+        "with a black tie, evening time arms crossed. To my right, Virat Kohli resting shoulder to shoulder with me in a black suit with a white shirt, The street is empty and dramatic. Moody lighting with a 35mm film look. Shallow depth of field, sharp focus on the three of us. Aspect ratio 9:16.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/mevirat.webp"
+      imageUrl: "/images/mevirat.webp",
     },
     {
-      prompt: "An aerial cinematic shot of A young man 'With the same face as uploded image' leaning coolly on the hood of a red Lamborghini Aventador on a luxury car studio, wearing a oversized premium off white T-shirt underneath a maroon color varsity jacket. I Moody lighting, Photorealistic, shallow depth of field, soft warm lighting, high-resolution DSLR quality, Hasselblad X2D 100C, cinematic",
+      prompt:
+        "An aerial cinematic shot of A young man 'With the same face as uploded image' leaning coolly on the hood of a red Lamborghini Aventador on a luxury car studio, wearing a oversized premium off white T-shirt underneath a maroon color varsity jacket. I Moody lighting, Photorealistic, shallow depth of field, soft warm lighting, high-resolution DSLR quality, Hasselblad X2D 100C, cinematic",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/meredcar.webp"
+      imageUrl: "/images/meredcar.webp",
     },
     {
-      prompt: "Edit this photo to place me in a Fast & Furious style scene. Keep my face and pose the same. Add a sleek, modified orange sports car (like a veilside Mazda RX-7) and In this image, I am resting my leg on the front fender, which is a part of the car's exterior. Like the pic I sent secondly. Make the background look like an urban street or garage setting, with a gritty, cinematic vibe. Don't change my face keep it same. Add shadowyfigures or people in racing gear in the background, like a street racing meet. Lightingshould be dramatic, like in the movie.Ration portrait 16:9",
+      prompt:
+        "Edit this photo to place me in a Fast & Furious style scene. Keep my face and pose the same. Add a sleek, modified orange sports car (like a veilside Mazda RX-7) and In this image, I am resting my leg on the front fender, which is a part of the car's exterior. Like the pic I sent secondly. Make the background look like an urban street or garage setting, with a gritty, cinematic vibe. Don't change my face keep it same. Add shadowyfigures or people in racing gear in the background, like a street racing meet. Lightingshould be dramatic, like in the movie.Ration portrait 16:9",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/meredcar1.webp"
+      imageUrl: "/images/meredcar1.webp",
     },
     {
-      prompt: "A 3D hyper-realistic miniature diorama inside a glass box with a black acrylic base, labeled 'Ramoliya Jay' in silver, with a small LED light under the label. It should feature a figure sitting relaxed with a right leg over the left thigh, on a wooden park bench, holding a cup of tea, at night, on a grass park base. Place a street lamp behind the figure, shinning downward. Make it without any background inside the glass box. Cinematic 4D rendered 8K quality, portrait view",
+      prompt:
+        "A 3D hyper-realistic miniature diorama inside a glass box with a black acrylic base, labeled 'Ramoliya Jay' in silver, with a small LED light under the label. It should feature a figure sitting relaxed with a right leg over the left thigh, on a wooden park bench, holding a cup of tea, at night, on a grass park base. Place a street lamp behind the figure, shinning downward. Make it without any background inside the glass box. Cinematic 4D rendered 8K quality, portrait view",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/3dinme.webp"
+      imageUrl: "/images/3dinme.webp",
     },
     {
-      prompt: "Transform this person into a scene from the Squid Game TV series. Keep the face exactly the same. Add a green tracksuit with a white number tag, dim indoor lighting with a dramatic and ter atmosphere, and background characters in similar outfits. Make it look like a cinematic shot from survival game show, keeping facial expression and identity unchanged!",
+      prompt:
+        "Transform this person into a scene from the Squid Game TV series. Keep the face exactly the same. Add a green tracksuit with a white number tag, dim indoor lighting with a dramatic and ter atmosphere, and background characters in similar outfits. Make it look like a cinematic shot from survival game show, keeping facial expression and identity unchanged!",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/meingame.webp"
+      imageUrl: "/images/meingame.webp",
     },
     {
-      prompt: "Create a high-resolution 3D text design in the style of stacked wooden blocks. The text should read: 'LinkedIn' with each word stacked vertically like a totem pole. The letters should be bold, blocky, and appear as if they are carved from rough, aged wood with visible grain, cracks, and natural imperfections. The wood texture should look dry and slightly cracked, with a rich brown color and realistic lighting and shadows. Ensure the front face of the letters has a slightly darker tone and the sides have soft gradients to show depth. Use a warm, pastel background (like soft orange or beige) to make the 3D text pop. Maintain realistic shadows and subtle reflections to give a solid, grounded feel. Style: Photorealistic, cinematic lighting, dramatic depth, slight perspective from the bottom left.",
+      prompt:
+        "Create a high-resolution 3D text design in the style of stacked wooden blocks. The text should read: 'LinkedIn' with each word stacked vertically like a totem pole. The letters should be bold, blocky, and appear as if they are carved from rough, aged wood with visible grain, cracks, and natural imperfections. The wood texture should look dry and slightly cracked, with a rich brown color and realistic lighting and shadows. Ensure the front face of the letters has a slightly darker tone and the sides have soft gradients to show depth. Use a warm, pastel background (like soft orange or beige) to make the 3D text pop. Maintain realistic shadows and subtle reflections to give a solid, grounded feel. Style: Photorealistic, cinematic lighting, dramatic depth, slight perspective from the bottom left.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/wooden.webp"
+      imageUrl: "/images/wooden.webp",
     },
     {
-      prompt: "Cinematic overhead shot of me standing still a brick city sidesalk, wearing a dark oversized blazer, motion-blurred crowd rushes past around me moody lighting 35mm film look. Shallow depth of field, sharp focus on me. Ration portrait 4:3 Keep the face same as the raw picture",
+      prompt:
+        "Cinematic overhead shot of me standing still a brick city sidesalk, wearing a dark oversized blazer, motion-blurred crowd rushes past around me moody lighting 35mm film look. Shallow depth of field, sharp focus on me. Ration portrait 4:3 Keep the face same as the raw picture",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/cinematic.webp"
+      imageUrl: "/images/cinematic.webp",
     },
     {
-      prompt: "Cinematic overhead shot of me standing still a brick city sidesalk, wearing a dark oversized blazer, motion-blurred crowd rushes past around me moody lighting 35mm film look. Shallow depth of field, sharp focus on me. Ration potrait 4:3",
+      prompt:
+        "Cinematic overhead shot of me standing still a brick city sidesalk, wearing a dark oversized blazer, motion-blurred crowd rushes past around me moody lighting 35mm film look. Shallow depth of field, sharp focus on me. Ration potrait 4:3",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/cinematic1.webp"
+      imageUrl: "/images/cinematic1.webp",
     },
     {
-      prompt: "A premium 'Monixa' brand T-shirt placed elegantly under a transparent glass dome with mystical purple smoke swirling inside. The T-shirt is neatly folded or displayed on a sleek stand, showcasing its stylish design and Monixa logo clearly. The background is dark and luxurious, emphasizing the glow of the smoke and the quality of the product. A hand wearing a lace glove is lifting the glass dome delicately, adding a touch of fashion and mystery to the scene. The overall mood is high-fashion, cinematic, and magical.",
+      prompt:
+        "A premium 'Monixa' brand T-shirt placed elegantly under a transparent glass dome with mystical purple smoke swirling inside. The T-shirt is neatly folded or displayed on a sleek stand, showcasing its stylish design and Monixa logo clearly. The background is dark and luxurious, emphasizing the glow of the smoke and the quality of the product. A hand wearing a lace glove is lifting the glass dome delicately, adding a touch of fashion and mystery to the scene. The overall mood is high-fashion, cinematic, and magical.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/monixain.webp"
+      imageUrl: "/images/monixain.webp",
     },
     {
-      prompt: "Ultra-realistic portrait of a confident young man wearing a dark navy oversized streetwear t-shirt with a glowing blue mandala pattern and a silver Trishul symbol at the center, black cargo pants, black sunglasses, and a silver chain. He stands casually with hands in his pockets against a clean gradient background (deep navy to sky blue), looking straight at the camera. No text or logos in the background.Use shallow depth of field. Shot on a Canon EOS R5 + RF 85mm f/1.2L lens, studio lighting, 12K resolution, cinematic editorial fashion shoot style.",
+      prompt:
+        "Ultra-realistic portrait of a confident young man wearing a dark navy oversized streetwear t-shirt with a glowing blue mandala pattern and a silver Trishul symbol at the center, black cargo pants, black sunglasses, and a silver chain. He stands casually with hands in his pockets against a clean gradient background (deep navy to sky blue), looking straight at the camera. No text or logos in the background.Use shallow depth of field. Shot on a Canon EOS R5 + RF 85mm f/1.2L lens, studio lighting, 12K resolution, cinematic editorial fashion shoot style.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/shivme.webp"
+      imageUrl: "/images/shivme.webp",
     },
     {
-      prompt: "A high-resolution cinematic design with a deep black background. In the center, the word 'Water' appears as if it is made of water, with realistic water textures, reflections, and light shimmer. The text should float in mid-air, semi-transparent, and glowing gently. Surrounding the text, soft white smoke drifts naturally, blending with the background, adding a dreamy and mysterious effect. The overall composition should be modern, surreal, and atmospheric — as if the word is breathing in the air.",
+      prompt:
+        "A high-resolution cinematic design with a deep black background. In the center, the word 'Water' appears as if it is made of water, with realistic water textures, reflections, and light shimmer. The text should float in mid-air, semi-transparent, and glowing gently. Surrounding the text, soft white smoke drifts naturally, blending with the background, adding a dreamy and mysterious effect. The overall composition should be modern, surreal, and atmospheric — as if the word is breathing in the air.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/water.webp"
+      imageUrl: "/images/water.webp",
     },
     {
-      prompt: "Design the word Ramoliya in a bold, futuristic glass-style font on a deep black background. The letters should appear semi-transparent, with smooth, reflective glass edges. Inside the glass, infuse glowing neon blue and purple light that softly blends, giving an inner radiance. Add subtle internal glows, soft color bleeding, and realistic reflections to enhance the 3D glass effect. Apply faint, diffused shadows beneath the text to create depth and a floating sensation. The overall vibe should feel high-tech, cyberpunk, and visually striking — perfect for a modern tech or digital brand identity.",
+      prompt:
+        "Design the word Ramoliya in a bold, futuristic glass-style font on a deep black background. The letters should appear semi-transparent, with smooth, reflective glass edges. Inside the glass, infuse glowing neon blue and purple light that softly blends, giving an inner radiance. Add subtle internal glows, soft color bleeding, and realistic reflections to enhance the 3D glass effect. Apply faint, diffused shadows beneath the text to create depth and a floating sensation. The overall vibe should feel high-tech, cyberpunk, and visually striking — perfect for a modern tech or digital brand identity.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/neonramoliya.webp"
+      imageUrl: "/images/neonramoliya.webp",
     },
     {
-      prompt: "Design the word 'Graphics' in highly detailed metallic chrome typography, featuring sharp edges and realistic reflections. The text should appear partially engulfed in swirling smoke and vivid orange flames, with glowing ember particles drifting around it. Add heat distortion and subtle reflections of firelight on the chrome surface to emphasize realism. The background should be a dark, gritty urban scene at night—think rain-soaked pavement, blurred city lights, and industrial textures. Add cinematic lighting with contrasting cool blue shadows and fiery warm highlights, creating a powerful, dramatic mood.",
+      prompt:
+        "Design the word 'Graphics' in highly detailed metallic chrome typography, featuring sharp edges and realistic reflections. The text should appear partially engulfed in swirling smoke and vivid orange flames, with glowing ember particles drifting around it. Add heat distortion and subtle reflections of firelight on the chrome surface to emphasize realism. The background should be a dark, gritty urban scene at night—think rain-soaked pavement, blurred city lights, and industrial textures. Add cinematic lighting with contrasting cool blue shadows and fiery warm highlights, creating a powerful, dramatic mood.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/fire.webp"
+      imageUrl: "/images/fire.webp",
+    },
+    {
+      prompt:
+        "A retro shot of the number 133, sculpted from translucent, jelly-like gel, floating in the air with a luminous translucent surface. The retro film grain adds an organic feel, isolated against a light background, soft and flexible in blue-grey tones.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/133water.webp",
+    },
+    {
+      prompt:
+        "Retro shot of a letter R sculpted from soft, plush fabric, floating in midair with a red. Retro film grain adds nostalgia, isolated on a light background, cozy and ethereal --ar 9:16 --v 7 --profile z5ilm5w",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/redr.webp",
+    },
+    {
+      prompt:
+        "Design a premium tea packaging for a brand that blends ancient Gujarati tradition with futuristic elegance. The packet should feature intricate hand-drawn illustrations of a Gujarati village morning – cowbells, tulsi plants, and a copper kettle steaming on a clay stove. The color palette should combine natural earthy tones (browns, soft greens) with golden metallic foil accents to show luxury. The brand name should be embossed in a flowing, calligraphic Devanagari or Gujarati script, with subtle texture that mimics old paper or leaf veins. Add abstract steam waves rising from a tea cup, forming shapes like cultural symbols — a peacock, an old temple dome, or hands in a ‘namaste’ — to suggest warmth and cultural soul. The backside of the packet should show tea leaves falling from the sky like blessings — with hand-lettered taglines like: 'Har Chuski Ek Virasat' or 'Jya Sudhi Sugandh Chhe, Tya Sudhi Sanskar Chhe' Make the packet reusable — part of a sustainable lifestyle. Add a minimal info panel with a QR code that opens a short folk story related to chai from Gujarat.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/tea.webp",
+    },
+    {
+      prompt:
+        "Design a tea packet and advertising poster that triggers nostalgia and emotional memories in the viewer.Split the design visually into two halves: 🔸 Left Half: A memory scene — a mother pouring chai in a steel glass in a mud house courtyard. A cow is seen in the background, radio is playing, and sunlight is falling through jali windows. This part should be slightly faded like an old photo or dream. 🔸 Right Half: Present day — a young working woman in a city apartment sipping tea on her balcony, eyes closed, same steel glass in hand. Modern life, but that same connection. In between the two halves — a golden steam trail connects them, forming shapes like a temple bell, neem leaves, or a smiling elder. Use warm orange, turmeric yellow, and deep brown tones. On top, write in hand-lettered Gujarati: 'Cha jevi biji koi yaad nathi.' Or in Hindi/English: 'Some sips take you home.' The product name Desi Dharti – Chai Bhuki should appear at the bottom with a logo that looks like it was stamped on a jute bag.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/tea1.webp",
+    },
+    {
+      prompt:
+        "Create A hyper-realistic, three-dimensional technical sketch of a [Brand] [Car Model] appears to rise from a blueprint sheet on a wooden workshop table. The car is drawn in white ink and fine pencil lines, showcasing wireframe contours, detailed engine components, and transparent structural layers. The drawing blends seamlessly into reality, giving the illusion that the vehicle is physically emerging from the paper. Around the sheet lie mechanical tools, pencils, and markers, adding to the authentic studio environment. Professional lighting and sharp focus enhance the precision, depth, and surreal dimensional transition of the car from sketch to solid form. Aspect ratio 9:16.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/tractor.webp",
     },
     {
       prompt: "",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/.webp"
+      imageUrl: "/images/.webp",
     },
     {
       prompt: "",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/.webp"
+      imageUrl: "/images/.webp",
     },
   ];
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const projectsPerPage = 9;
+
+  const totalPages = Math.ceil(projects.length / projectsPerPage);
+  const startIndex = (currentPage - 1) * projectsPerPage;
+  const currentProjects = projects.slice(
+    startIndex,
+    startIndex + projectsPerPage
+  );
+
+  const handlePageChange = (page) => {
+    if (page >= 1 && page <= totalPages) {
+      setCurrentPage(page);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="min-h-screen bg-portfolio-dark">
       <Navigation />
-      
+
       <main className="pt-20">
         <section className="py-20 bg-portfolio-dark">
           <div className="container mx-auto px-6">
@@ -200,13 +281,28 @@ const Work = () => {
               <h1 className="text-5xl md:text-6xl font-display font-bold mb-6 text-gradient animate-fade-in">
                 My Work
               </h1>
-              <p className="text-xl text-portfolio-text-secondary max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                Explore my creative journey through prompt-driven design solutions. Each project showcases the power of combining creative briefs with innovative visual storytelling.
+              <p
+                className="text-xl text-portfolio-text-secondary max-w-3xl mx-auto animate-fade-in"
+                style={{ animationDelay: "0.2s" }}
+              >
+                Explore my creative journey through prompt-driven design
+                solutions. Each project showcases the power of combining
+                creative briefs with innovative visual storytelling.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects.map((project, index) => (
+                <ProjectCard
+                  key={index}
+                  {...project}
+                  animationDelay={`${0.1 * index}s`}
+                />
+              ))}
+            </div> */}
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {currentProjects.map((project, index) => (
                 <ProjectCard
                   key={index}
                   {...project}
@@ -215,6 +311,38 @@ const Work = () => {
               ))}
             </div>
           </div>
+
+           <div className="flex justify-center mt-12 space-x-2">
+        <button
+          onClick={() => handlePageChange(currentPage - 1)}
+          disabled={currentPage === 1}
+          className="px-4 py-2 bg-portfolio-accent text-white rounded hover:bg-opacity-80 disabled:opacity-50"
+        >
+          Previous
+        </button>
+
+        {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+          <button
+            key={page}
+            onClick={() => handlePageChange(page)}
+            className={`px-4 py-2 rounded ${
+              currentPage === page
+                ? "bg-white text-portfolio-dark font-bold"
+                : "bg-portfolio-secondary text-white hover:bg-opacity-80"
+            }`}
+          >
+            {page}
+          </button>
+        ))}
+
+        <button
+          onClick={() => handlePageChange(currentPage + 1)}
+          disabled={currentPage === totalPages}
+          className="px-4 py-2 bg-portfolio-accent text-white rounded hover:bg-opacity-80 disabled:opacity-50"
+        >
+          Next
+        </button>
+      </div>
         </section>
       </main>
 

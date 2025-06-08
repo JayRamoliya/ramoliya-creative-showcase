@@ -169,6 +169,48 @@ const Gallery = () => {
       imageUrl: "/images/fire.webp",
       description: ""
     },
+    {
+      id: 13,
+      title: "",
+      category: "Water",
+      imageUrl: "/images/133water.webp",
+      description: ""
+    },
+    {
+      id: 13,
+      title: "",
+      category: "Text",
+      imageUrl: "/images/redr.webp",
+      description: ""
+    },
+    {
+      id: 13,
+      title: "",
+      category: "Marketing",
+      imageUrl: "/images/tea.webp",
+      description: ""
+    },
+    {
+      id: 13,
+      title: "",
+      category: "Marketing",
+      imageUrl: "/images/tea1.webp",
+      description: ""
+    },
+    {
+      id: 13,
+      title: "",
+      category: "Marketing",
+      imageUrl: "/images/tractor.webp",
+      description: ""
+    },
+    {
+      id: 13,
+      title: "",
+      category: "Marketing",
+      imageUrl: "/images/gadu.webp",
+      description: ""
+    },
   ];
 
   return (
