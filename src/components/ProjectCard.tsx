@@ -141,9 +141,8 @@
 
 
 
-
 import { Card, CardContent } from '@/components/ui/card';
-import { toast } from 'sonner'; // Make sure 'sonner' is installed
+import { toast } from 'sonner';
 
 interface ProjectCardProps {
   prompt: string;
@@ -173,18 +172,23 @@ const ProjectCard = ({
 
   return (
     <Card
-      className="transition-all duration-300 hover:shadow-xl bg-card border border-border rounded-xl overflow-hidden cursor-pointer"
+      className="transition-all duration-300 hover:shadow-xl bg-card border border-border rounded-xl overflow-hidden cursor-pointer relative group"
       style={{ animationDelay }}
       onClick={handleCopy}
     >
       <CardContent className="p-0">
-        {/* Full Image without crop */}
-        <div className="w-full bg-muted">
+        <div className="w-full bg-muted relative">
+          {/* Image */}
           <img
             src={imageUrl}
             alt={title}
-            className="w-full h-auto max-h-[400px] object-contain transition-transform duration-300 hover:scale-105"
+            className="w-full h-auto max-h-[400px] object-contain transition-transform duration-300 group-hover:scale-105"
           />
+
+          {/* "Click to copy" overlay */}
+          <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-3 py-1 rounded-full backdrop-blur-sm shadow-sm transition-opacity duration-300 group-hover:opacity-100 opacity-0">
+            📋 Click to copy prompt
+          </div>
         </div>
       </CardContent>
     </Card>

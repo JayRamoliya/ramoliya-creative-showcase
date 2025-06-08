@@ -10,88 +10,130 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      title: "Minimalist Design",
-      category: "Poster Design",
-      imageUrl: "photo-1493397212122-2b85dda8106b",
-      description: "Clean lines and minimal color palettes"
+      title: "Logo Design",
+      category: "Logo Design",
+      imageUrl: "images/ramoliya logo.webp",
+      description: ""
     },
     {
       id: 2,
-      title: "Futuristic Interface",
-      category: "UI/UX Design",
-      imageUrl: "photo-1461749280684-dccba630e2f6",
-      description: "Modern smart home app interface"
+      title: "Logo Design",
+      category: "Logo Design",
+      imageUrl: "images/wings tech.webp",
+      description: ""
     },
     {
       id: 3,
       title: "Abstract Art",
       category: "Illustration",
-      imageUrl: "photo-1487058792275-0ad4aaf24ca7",
-      description: "Music rhythm inspired artwork"
+      imageUrl: "/images/pink wings tech.webp",
+      description: ""
     },
     {
       id: 4,
       title: "Brand Identity",
       category: "Branding",
-      imageUrl: "photo-1498050108023-c5249f4df085",
+      imageUrl: "/images/monixa adve.webp",
       description: "Eco-friendly startup branding"
     },
     {
       id: 5,
-      title: "Tech Logo",
+      title: "Logo",
       category: "Logo Design",
-      imageUrl: "photo-1555066931-4365d14bab8c",
-      description: "AI tech startup logo"
+      imageUrl: "/images/netflix.webp",
+      description: "AI startup logo"
     },
     {
       id: 6,
-      title: "Mobile App",
-      category: "App Design",
-      imageUrl: "photo-1571019613454-1cb2f99b2d8b",
-      description: "Fitness tracking application"
+      title: "Logo Design",
+      category: "Logo Design",
+      imageUrl: "/images/3dramoliya.webp",
+      description: ""
     },
     {
       id: 7,
       title: "Package Design",
       category: "Packaging",
-      imageUrl: "photo-1559056199-641a0ac8b55e",
-      description: "Organic coffee packaging"
+      imageUrl: "/images/pill.webp",
+      description: ""
     },
     {
       id: 8,
       title: "Social Campaign",
       category: "Marketing",
-      imageUrl: "photo-1441986300917-64674bd600d8",
+      imageUrl: "/images/monix tshirt.webp",
       description: "Sustainable fashion campaign"
     },
     {
       id: 9,
-      title: "Web Development",
-      category: "Development",
-      imageUrl: "photo-1649972904349-6e44c42644a7",
-      description: "Modern web application"
+      title: "Social Campaign",
+      category: "Marketing",
+      imageUrl: "/images/monixa style.webp",
+      description: ""
     },
     {
       id: 10,
-      title: "Circuit Board",
-      category: "Technology",
-      imageUrl: "photo-1518770660439-4636190af475",
-      description: "Electronic circuit design"
+      title: "",
+      category: "Marketing",
+      imageUrl: "/images/pepsi.webp",
+      description: ""
     },
     {
       id: 11,
-      title: "Programming",
-      category: "Development",
-      imageUrl: "photo-1486312338219-ce68d2c6f44d",
-      description: "Software development"
+      title: "",
+      category: "Cinematic",
+      imageUrl: "/images/mevirat.webp",
+      description: ""
     },
     {
       id: 12,
-      title: "Robotics",
-      category: "Technology",
-      imageUrl: "photo-1485827404703-89b55fcc595e",
-      description: "AI robotics design"
-    }
+      title: "",
+      category: "Car",
+      imageUrl: "/images/meredcar.webp",
+      description: ""
+    },
+    {
+      id: 13,
+      title: "",
+      category: "Car",
+      imageUrl: "/images/meredcar1.webp",
+      description: ""
+    },
+    {
+      id: 13,
+      title: "",
+      category: "3D",
+      imageUrl: "/images/3dinme.webp",
+      description: ""
+    },
+    {
+      id: 13,
+      title: "",
+      category: "Cinematic",
+      imageUrl: "/images/meingame.webp",
+      description: ""
+    },
+    {
+      id: 13,
+      title: "",
+      category: "Wooden",
+      imageUrl: "/images/wooden.webp",
+      description: ""
+    },
+    {
+      id: 13,
+      title: "",
+      category: "Cinematic",
+      imageUrl: "/images/cinematic.webp",
+      description: ""
+    },
+    {
+      id: 13,
+      title: "",
+      category: "Cinematic",
+      imageUrl: "/images/cinematic1.webp",
+      description: ""
+    },
   ];
 
   return (
@@ -125,7 +167,7 @@ const Gallery = () => {
                   <CardContent className="p-0">
                     <div className="relative overflow-hidden">
                       <img
-                        src={`https://images.unsplash.com/${image.imageUrl}?w=400&h=300&fit=crop`}
+                        src={image.imageUrl}
                         alt={image.title}
                         className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                       />
@@ -163,7 +205,7 @@ const Gallery = () => {
           >
             <div className="relative max-w-4xl max-h-full">
               <img
-                src={`https://images.unsplash.com/${selectedImage}?w=1200&h=800&fit=crop`}
+                src={selectedImage}
                 alt="Gallery Image"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />

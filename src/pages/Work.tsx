@@ -7,58 +7,58 @@ const Work = () => {
   const projects = [
     {
       prompt: "Design a luxury, elegant, and timeless black and white logo for a brand named Ramoliya. The logo should have a sophisticated and minimalist look with clean lines and a refined serif or modern calligraphy font. Include a simple yet memorable icon or monogram that reflects exclusivity, prestige, and high-end quality. The overall design should feel classic and premium, suitable for a luxury brand in fashion, jewelry, or lifestyle sectors.",
-      title: "Minimalist Poster Design",
-      description: "This design by Jay Ramoliya uses clean lines, minimal color palettes, and ample white space to evoke calmness and clarity, perfectly reflecting the prompt's essence.",
-      tools: ["Photoshop", "Illustrator", "AI"],
+      title: "",
+      description: "",
+      tools: [],
       imageUrl: "images/ramoliya logo.webp"
     },
     {
       prompt: "Redesign the logo for Wings Tech, an IT Services and IT Consulting company. The new logo should keep the essence of wings symbolizing speed, agility, and innovation, but with a more modern, sleek, and minimalist look. Use a clean, professional style with a black and white or monochrome palette to convey sophistication and trustworthiness. Incorporate a contemporary sans-serif font for the text 'Wings Tech' that is bold and easily readable. The design should reflect technology, digital transformation, and consultancy professionalism while maintaining simplicity and elegance.",
-      title: "Futuristic UI Concept",
-      description: "Created by Jay Ramoliya, this futuristic UI features sleek lines, neon accents, and intuitive navigation designed to enhance the smart home experience.",
-      tools: ["Figma", "Adobe XD"],
+      title: "",
+      description: "",
+      tools: [],
       imageUrl: "images/wings tech.webp"
     },
     {
       prompt: "A 3D-rendered poster with the phrase 'Wings Tech' in bold, dripping pink letters. The background is dark gray with abstract pink designs and splatters. The text appears to be melting, giving it a dynamic and edgy look. The overall design is modern and attention-grabbing, conveying a sense of boldness and urgency.",
-      title: "Artistic Illustration",
-      description: "This abstract illustration by Jay Ramoliya captures the fluidity and energy of music rhythms using dynamic shapes and vibrant colors.",
-      tools: ["Procreate", "Adobe Illustrator"],
+      title: "",
+      description: "",
+      tools: [],
       imageUrl: "/images/pink wings tech.webp"
     },
     {
       prompt: "A conceptual and artistic fashion advertisement. A small tree with bare branches growing out of a large, broken white egg shell planter. The egg has the brand name 'Monixa' written on it in bold black modern font. The branches display stylish clothing items—two fashionable jackets hanging neatly on wooden hangers and two pairs of leather shoes hanging by laces. The background is minimalistic and pure white, giving the scene a clean, elegant look. The overall composition should be surreal, high-end, and modern, suitable for a luxury fashion brand ad.",
-      title: "Branding Identity",
-      description: "Designed by Jay Ramoliya, this brand identity reflects sustainability through earthy colors and clean design, highlighting eco-friendly values.",
-      tools: ["Illustrator", "Photoshop"],
+      title: "",
+      description: "",
+      tools: [],
       imageUrl: "/images/monixa adve.webp"
     },
     {
       prompt: "A modern and artistic product advertisement. A thermal receipt printer is printing a white receipt. The top of the receipt says 'NEW ORDER' in bold black font, followed by a barcode. In the center of the receipt is an image of a stylish beige T-shirt with the word 'Monixa' written across the chest in clean, black modern typography. Below the image, the text reads 'real beauty' in a simple serif font. The background is in soft beige tones, giving a minimalist and elegant look suitable for a fashion or lifestyle brand ad.",
-      title: "AI Tech Logo Design",
-      description: "A sleek, modern logo design that represents innovation and cutting-edge technology in the AI space.",
-      tools: ["Illustrator", "Figma"],
+      title: "",
+      description: "",
+      tools: [],
       imageUrl: "/images/monixa order.webp"
     },
     {
       prompt: "Design a modern and minimalist logo for a brand named Netflix. The logo should be clean, geometric, and suitable for a tech startup. Use a professional color palette like shades of blue, black, and white. The design should include a simple icon or monogram that reflects innovation, connectivity, or digital transformation. The typography should be bold, sans-serif, and easily readable. The overall look should feel futuristic and premium, yet minimal.",
-      title: "Fitness App UI/UX",
-      description: "Intuitive and motivating mobile interface design that encourages users to achieve their fitness goals.",
-      tools: ["Figma", "Principle", "Adobe XD"],
+      title: "",
+      description: "",
+      tools: [],
       imageUrl: "/images/netflix.webp"
     },
     {
       prompt: "3D typography artwork with the phrase 'Ramoliya' formed from vibrant, rainbow-colored clouds and smoke. The text is sculpted from colorful, puffy, and fluffy material that looks like dripping paint and cotton candy. Each letter is seamlessly blended into a dynamic cloud mass with a realistic, soft texture. The background is dark and moody to make the colors pop. Ultra-detailed, hyper-realistic, surreal, dreamlike composition.",
-      title: "Organic Coffee Packaging",
-      description: "Sustainable and eye-catching packaging design that reflects the premium quality and organic nature of the coffee.",
-      tools: ["Photoshop", "Illustrator", "3D Mockup"],
+      title: "",
+      description: "",
+      tools: [],
       imageUrl: "/images/3dramoliya.webp"
     },
     {
       prompt: "Create a poster with a 9:16 aspect ratio. A pill with green color leetcode on top and transparent at the bottom, featuring the printed leetcode logo. Inside the pill, include a large amount of 500+ badge. black background.",
-      title: "Sustainable Fashion Campaign",
-      description: "Vibrant and engaging social media visuals that promote eco-conscious fashion choices and brand awareness.",
-      tools: ["Photoshop", "After Effects", "Canva"],
+      title: "",
+      description: "",
+      tools: [],
       imageUrl: "/images/pill.webp"
     },
     {
