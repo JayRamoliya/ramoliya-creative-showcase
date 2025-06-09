@@ -1,8 +1,7 @@
-
-import { useState } from 'react';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import { Card, CardContent } from '@/components/ui/card';
+import { useState } from "react";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import { Card, CardContent } from "@/components/ui/card";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -13,210 +12,252 @@ const Gallery = () => {
       title: "Logo Design",
       category: "Logo Design",
       imageUrl: "images/ramoliya logo.webp",
-      description: ""
+      description: "",
     },
     {
       id: 2,
       title: "Logo Design",
       category: "Logo Design",
       imageUrl: "images/wings tech.webp",
-      description: ""
+      description: "",
     },
     {
       id: 3,
       title: "Abstract Art",
       category: "Illustration",
       imageUrl: "/images/pink wings tech.webp",
-      description: ""
+      description: "",
     },
     {
       id: 4,
       title: "Brand Identity",
       category: "Branding",
       imageUrl: "/images/monixa adve.webp",
-      description: "Eco-friendly startup branding"
+      description: "Eco-friendly startup branding",
     },
     {
       id: 5,
       title: "Logo",
       category: "Logo Design",
       imageUrl: "/images/netflix.webp",
-      description: "AI startup logo"
+      description: "AI startup logo",
     },
     {
       id: 6,
       title: "Logo Design",
       category: "Logo Design",
       imageUrl: "/images/3dramoliya.webp",
-      description: ""
+      description: "",
     },
     {
       id: 7,
       title: "Package Design",
       category: "Packaging",
       imageUrl: "/images/pill.webp",
-      description: ""
+      description: "",
     },
     {
       id: 8,
       title: "Social Campaign",
       category: "Marketing",
       imageUrl: "/images/monix tshirt.webp",
-      description: "Sustainable fashion campaign"
+      description: "Sustainable fashion campaign",
     },
     {
       id: 9,
       title: "Social Campaign",
       category: "Marketing",
       imageUrl: "/images/monixa style.webp",
-      description: ""
+      description: "",
     },
     {
       id: 10,
       title: "",
       category: "Marketing",
       imageUrl: "/images/pepsi.webp",
-      description: ""
+      description: "",
     },
     {
       id: 11,
       title: "",
       category: "Cinematic",
       imageUrl: "/images/mevirat.webp",
-      description: ""
+      description: "",
     },
     {
       id: 12,
       title: "",
       category: "Car",
       imageUrl: "/images/meredcar.webp",
-      description: ""
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "Car",
       imageUrl: "/images/meredcar1.webp",
-      description: ""
+      description: "",
+    },
+    {
+      id: 13,
+      title: "",
+      category: "Car",
+      imageUrl: "/images/mecar1.webp",
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "3D",
       imageUrl: "/images/3dinme.webp",
-      description: ""
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "Cinematic",
       imageUrl: "/images/meingame.webp",
-      description: ""
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "Wooden",
       imageUrl: "/images/wooden.webp",
-      description: ""
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "Cinematic",
       imageUrl: "/images/cinematic.webp",
-      description: ""
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "Cinematic",
       imageUrl: "/images/cinematic1.webp",
-      description: ""
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "Marketing",
       imageUrl: "/images/monixain.webp",
-      description: ""
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "Cinematic",
       imageUrl: "/images/shivme.webp",
-      description: ""
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "Text",
       imageUrl: "/images/water.webp",
-      description: ""
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "Text",
       imageUrl: "/images/neonramoliya.webp",
-      description: ""
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "Graphic",
       imageUrl: "/images/fire.webp",
-      description: ""
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "Water",
       imageUrl: "/images/133water.webp",
-      description: ""
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "Text",
       imageUrl: "/images/redr.webp",
-      description: ""
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "Marketing",
       imageUrl: "/images/tea.webp",
-      description: ""
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "Marketing",
       imageUrl: "/images/tea1.webp",
-      description: ""
+      description: "",
+    },
+    {
+      id: 13,
+      title: "",
+      category: "Marketing",
+      imageUrl: "/images/agro.webp",
+      description: "",
+    },
+    {
+      id: 13,
+      title: "",
+      category: "Marketing",
+      imageUrl: "/images/agro2.webp",
+      description: "",
+    },
+    {
+      id: 13,
+      title: "",
+      category: "Marketing",
+      imageUrl: "/images/card.webp",
+      description: "",
+    },
+    {
+      id: 13,
+      title: "",
+      category: "Marketing",
+      imageUrl: "/images/card1.webp",
+      description: "",
+    },
+    {
+      id: 13,
+      title: "",
+      category: "Marketing",
+      imageUrl: "/images/poster.webp",
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "Marketing",
       imageUrl: "/images/tractor.webp",
-      description: ""
+      description: "",
     },
     {
       id: 13,
       title: "",
       category: "Marketing",
       imageUrl: "/images/gadu.webp",
-      description: ""
+      description: "",
     },
   ];
 
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       <main className="pt-20">
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-br from-background via-muted/20 to-background">
@@ -224,8 +265,12 @@ const Gallery = () => {
             <h1 className="text-5xl md:text-6xl font-display font-bold mb-6 text-gradient animate-fade-in">
               Jay Ramoliya Gallery
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              Explore my creative journey through innovative design solutions and visual storytelling
+            <p
+              className="text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-in"
+              style={{ animationDelay: "0.2s" }}
+            >
+              Explore my creative journey through innovative design solutions
+              and visual storytelling
             </p>
           </div>
         </section>
@@ -235,7 +280,7 @@ const Gallery = () => {
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {galleryImages.map((image, index) => (
-                <Card 
+                <Card
                   key={image.id}
                   className="group cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-primary/20 bg-card border border-border animate-fade-in overflow-hidden"
                   style={{ animationDelay: `${0.1 * index}s` }}
@@ -249,7 +294,7 @@ const Gallery = () => {
                         className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      
+
                       {/* Category Badge */}
                       <div className="absolute top-4 left-4">
                         <span className="bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-xs font-medium">
@@ -276,7 +321,7 @@ const Gallery = () => {
 
         {/* Lightbox Modal */}
         {selectedImage && (
-          <div 
+          <div
             className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
             onClick={() => setSelectedImage(null)}
           >

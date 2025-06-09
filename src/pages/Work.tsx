@@ -238,6 +238,58 @@ const Work = () => {
       imageUrl: "/images/tractor.webp",
     },
     {
+      prompt:
+        "Modern agricultural product packaging design, vertical standing pouch, clean and bold layout, white and orange color scheme with black accents, top section with company logo and bold product name 'Adarsh Agro', middle section showing fresh vegetables like capsicum, onion, tomato, garlic, etc., bottom text: 'Systemic - Selective - Growth Inhibitor', professional and eye-catching, high-resolution mockup on yellow gradient background, front view",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/agro.webp",
+    },
+    {
+      prompt:
+        "Create a modern, professional business card design for a wellness or health-related brand named 'Patel Agro Seeds' The card should have a clean, minimalist aesthetic with a green and white color scheme. Front Side: Use a deep green background with a subtle abstract leaf pattern. Center a clean, white leaf-inspired logo icon followed by the lowercase brand name 'Patel Agro Seeds' in a modern, rounded sans-serif font. Keep the layout simple and balanced. Back Side: Use a white background with minimal elements. Top-left: Display the same green logo followed by the word remdy in lowercase. Name: Patel Bhai — the first name in dark grey, last name in green. Website: patelagroseeds.com in small green font. Phone: 9825229766 in grey. Email: patelagroseeds@gmail.com in grey. Add a fine green line dividing the card content area neatly. The style should be crisp, elegant, and contemporary, suitable for a premium wellness or organic lifestyle brand. Use soft shadows and realistic lighting. Include a hand holding the card at the corner for a natural presentation.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/card.webp",
+    },
+    {
+      prompt: "Futuristic agriculture product pouch design, matte foil standing pack with elegant folds and realistic shadows, premium branding with bold product title 'Ishan Agro' in modern sans-serif font, top section includes sleek geometric logo with slogan below, dynamic color gradient (green to deep orange) representing organic farming, bottom section with icons for features (Systemic, Selective, Growth Inhibitor), fresh farm vegetables placed with shadow effect on front center (capsicum, onion, tomato, garlic), placed on a dramatic dark green-to-yellow background with soft spotlight for advertisement look, ultra-HD, front view mockup, minimalist but powerful packaging style",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/agro2.webp",
+    },
+    {
+      prompt:
+        "Visualise me as A young man wearing drop shoulder t-shirt and baggy jeans confidently leaning against my customised BMW E46 M3. The car is modified and blue and silver paintjob is done modernly street racing aesthetic. I am in a middle of a busy Phaka city road where people are rushing in motion. The style is inspired by a street racing game Need for speed.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/mecar1.webp",
+    },
+    {
+      prompt: "Design a professional and clean agriculture business card for 'Agro Organics'. Use earthy green and white tones with modern minimal style. Front side should display the company logo at the top (placeholder if logo not available), bold company name 'Agro Organics' in center, and below it, tagline: 'Nurturing Nature, Growing Futures.' Add an elegant leaf or crop icon watermark in the background. At the bottom, include: 📍 Ishwariya Main Rd, Madhapar, Rajkot 📞 9913744900 Back side of the card should feature a soft-focus image of green farmland or organic crops with a semi-transparent overlay. On top of that, place a slogan: 'Pure. Local. Sustainable.' with a QR code area below it. Use rounded corners, soft shadows, and a premium card layout with a modern serif or sans-serif font",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/card1.webp",
+    },
+    {
+      prompt: "Design a premium agro company poster for 'VIBGYOR Agro Commodities Pvt Ltd'. Use a clean, corporate yet earthy design style with modern layout. Background should have a soft gradient in green, yellow, and brown tones symbolizing nature, growth, and soil. At the top center, display the company name 'VIBGYOR Agro Commodities Pvt Ltd' in bold capital letters with a professional serif or sans-serif font. Below it, include a small horizontal line or crop icon. Middle section should feature visuals of grains, spices, or agri-commodities in a semi-circle arrangement, with a realistic shadow effect. Add the company address and contact details in clean typography at the bottom: 📍 803 Time Square, Nr SBI Bank, Ayodhya Chowk, 150ft Ring Road, Rajkot 📞 0281 2970090 Use icons for map and phone next to them for modern appearance. Add a bold tagline at the bottom like: 'Delivering Quality Agro Commodities Across India.' Optionally add a QR code area on the side with 'Scan to Know More'. Use a balance of whitespace and content — elegant, eye-catching, and suitable for A3/A4 poster print or digital promo.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/poster.webp",
+    },
+    {
+      prompt: "Create A hyper-realistic, three-dimensional technical sketch of a Bullock cart appears to rise from a blueprint sheet on a wooden workshop table. The car is drawn in white ink and fine pencil lines, showcasing wireframe contours, detailed engine components, and transparent structural layers. The drawing blends seamlessly into reality, giving the illusion that the vehicle is physically emerging from the paper. Around the sheet lie mechanical tools, pencils, and markers, adding to the authentic studio environment. Professional lighting and sharp focus enhance the precision, depth, and surreal dimensional transition of the car from sketch to solid form. Aspect ratio 9:16.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/gadu.webp",
+    },
+    {
       prompt: "",
       title: "",
       description: "",
@@ -312,37 +364,37 @@ const Work = () => {
             </div>
           </div>
 
-           <div className="flex justify-center mt-12 space-x-2">
-        <button
-          onClick={() => handlePageChange(currentPage - 1)}
-          disabled={currentPage === 1}
-          className="px-4 py-2 bg-portfolio-accent text-white rounded hover:bg-opacity-80 disabled:opacity-50"
-        >
-          Previous
-        </button>
+          <div className="flex justify-center mt-12 space-x-2">
+            <button
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+              className="px-4 py-2 bg-portfolio-accent text-white rounded hover:bg-opacity-80 disabled:opacity-50"
+            >
+              Previous
+            </button>
 
-        {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-          <button
-            key={page}
-            onClick={() => handlePageChange(page)}
-            className={`px-4 py-2 rounded ${
-              currentPage === page
-                ? "bg-white text-portfolio-dark font-bold"
-                : "bg-portfolio-secondary text-white hover:bg-opacity-80"
-            }`}
-          >
-            {page}
-          </button>
-        ))}
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+              <button
+                key={page}
+                onClick={() => handlePageChange(page)}
+                className={`px-4 py-2 rounded ${
+                  currentPage === page
+                    ? "bg-white text-portfolio-dark font-bold"
+                    : "bg-portfolio-secondary text-white hover:bg-opacity-80"
+                }`}
+              >
+                {page}
+              </button>
+            ))}
 
-        <button
-          onClick={() => handlePageChange(currentPage + 1)}
-          disabled={currentPage === totalPages}
-          className="px-4 py-2 bg-portfolio-accent text-white rounded hover:bg-opacity-80 disabled:opacity-50"
-        >
-          Next
-        </button>
-      </div>
+            <button
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className="px-4 py-2 bg-portfolio-accent text-white rounded hover:bg-opacity-80 disabled:opacity-50"
+            >
+              Next
+            </button>
+          </div>
         </section>
       </main>
 
