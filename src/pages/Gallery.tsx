@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   const galleryImages = [
     {
@@ -99,159 +100,227 @@ const Gallery = () => {
       description: "",
     },
     {
-      id: 13,
+      id: 14,
       title: "",
       category: "Car",
       imageUrl: "/images/mecar1.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 15,
       title: "",
       category: "3D",
       imageUrl: "/images/3dinme.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 16,
       title: "",
       category: "Cinematic",
       imageUrl: "/images/meingame.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 17,
       title: "",
       category: "Wooden",
       imageUrl: "/images/wooden.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 18,
       title: "",
       category: "Cinematic",
       imageUrl: "/images/cinematic.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 19,
       title: "",
       category: "Cinematic",
       imageUrl: "/images/cinematic1.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 20,
       title: "",
       category: "Marketing",
       imageUrl: "/images/monixain.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 21,
       title: "",
       category: "Cinematic",
       imageUrl: "/images/shivme.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 22,
       title: "",
       category: "Text",
       imageUrl: "/images/water.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 23,
       title: "",
       category: "Text",
       imageUrl: "/images/neonramoliya.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 24,
       title: "",
       category: "Graphic",
       imageUrl: "/images/fire.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 25,
       title: "",
       category: "Water",
       imageUrl: "/images/133water.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 26,
       title: "",
       category: "Text",
       imageUrl: "/images/redr.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 27,
       title: "",
       category: "Marketing",
       imageUrl: "/images/tea.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 28,
       title: "",
       category: "Marketing",
       imageUrl: "/images/tea1.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 29,
       title: "",
       category: "Marketing",
       imageUrl: "/images/agro.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 30,
       title: "",
       category: "Marketing",
       imageUrl: "/images/agro2.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 31,
       title: "",
-      category: "Marketing",
+      category: "Card Design",
       imageUrl: "/images/card.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 32,
       title: "",
-      category: "Marketing",
+      category: "Card Design",
       imageUrl: "/images/card1.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 33,
       title: "",
       category: "Marketing",
       imageUrl: "/images/poster.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 34,
       title: "",
       category: "Marketing",
       imageUrl: "/images/tractor.webp",
       description: "",
     },
     {
-      id: 13,
+      id: 35,
       title: "",
       category: "Marketing",
       imageUrl: "/images/gadu.webp",
       description: "",
     },
+    {
+      id: 36,
+      title: "",
+      category: "Card Design",
+      imageUrl: "/images/visicard.webp",
+      description: "",
+    },
+    {
+      id: 37,
+      title: "",
+      category: "Card Design",
+      imageUrl: "/images/visicard1.webp",
+      description: "",
+    },
+    {
+      id: 38,
+      title: "",
+      category: "Card Design",
+      imageUrl: "/images/visicard2.webp",
+      description: "",
+    },
+    {
+      id: 39,
+      title: "",
+      category: "Card Design",
+      imageUrl: "/images/visicard3.webp",
+      description: "",
+    },
+    {
+      id: 40,
+      title: "",
+      category: "Marketing",
+      imageUrl: "/images/tv.webp",
+      description: "",
+    },
+    {
+      id: 41,
+      title: "",
+      category: "Marketing",
+      imageUrl: "/images/tv1.webp",
+      description: "",
+    },
+    {
+      id: 42,
+      title: "",
+      category: "Marketing",
+      imageUrl: "/images/school.webp",
+      description: "",
+    },
+    {
+      id: 43,
+      title: "",
+      category: "Marketing",
+      imageUrl: "/images/mahi.webp",
+      description: "",
+    },
+    {
+      id: 44,
+      title: "",
+      category: "Marketing",
+      imageUrl: "/images/bhar.webp",
+      description: "",
+    },
+  ];
+
+  const categories = [
+    "All",
+    ...new Set(galleryImages.map((img) => img.category)),
   ];
 
   return (
@@ -275,46 +344,68 @@ const Gallery = () => {
           </div>
         </section>
 
+        <div className="flex flex-wrap justify-center gap-4 mb-10">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setSelectedCategory(cat)}
+              className={`px-4 py-2 rounded-full border transition-colors duration-300 ${
+                selectedCategory === cat
+                  ? "bg-primary text-white border-primary"
+                  : "bg-white text-gray-700 border-gray-300 hover:bg-gray-100"
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
         {/* Gallery Grid */}
         <section className="py-20">
           <div className="container mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {galleryImages.map((image, index) => (
-                <Card
-                  key={image.id}
-                  className="group cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-primary/20 bg-card border border-border animate-fade-in overflow-hidden"
-                  style={{ animationDelay: `${0.1 * index}s` }}
-                  onClick={() => setSelectedImage(image.imageUrl)}
-                >
-                  <CardContent className="p-0">
-                    <div className="relative overflow-hidden">
-                      <img
-                        src={image.imageUrl}
-                        alt={image.title}
-                        className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              {galleryImages
+                .filter((image) =>
+                  selectedCategory === "All"
+                    ? true
+                    : image.category === selectedCategory
+                )
+                .map((image, index) => (
+                  <Card
+                    key={image.id}
+                    className="group cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-primary/20 bg-card border border-border animate-fade-in overflow-hidden"
+                    style={{ animationDelay: `${0.1 * index}s` }}
+                    onClick={() => setSelectedImage(image.imageUrl)}
+                  >
+                    <CardContent className="p-0">
+                      <div className="relative overflow-hidden">
+                        <img
+                          src={image.imageUrl}
+                          alt={image.title}
+                          className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-                      {/* Category Badge */}
-                      <div className="absolute top-4 left-4">
-                        <span className="bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-xs font-medium">
-                          {image.category}
-                        </span>
-                      </div>
+                        {/* Category Badge */}
+                        <div className="absolute top-4 left-4">
+                          <span className="bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-xs font-medium">
+                            {image.category}
+                          </span>
+                        </div>
 
-                      {/* Content Overlay */}
-                      <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                        <h3 className="text-lg font-display font-semibold mb-1">
-                          {image.title}
-                        </h3>
-                        <p className="text-sm text-gray-300">
-                          {image.description}
-                        </p>
+                        {/* Content Overlay */}
+                        <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                          <h3 className="text-lg font-display font-semibold mb-1">
+                            {image.title}
+                          </h3>
+                          <p className="text-sm text-gray-300">
+                            {image.description}
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
+                    </CardContent>
+                  </Card>
+                ))}
             </div>
           </div>
         </section>

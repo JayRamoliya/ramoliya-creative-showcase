@@ -290,11 +290,18 @@ const Work = () => {
       imageUrl: "/images/gadu.webp",
     },
     {
-      prompt: "",
+      prompt: "Design a premium double-sided business card for an elite coaching institute. Use a dark matte navy background with gold foil accents. Front side should feature an elegant serif logo ‘New Gurukul Coaching Institute’ with the tagline ‘Where Knowledge Meets Excellence’. Use embossed texture and subtle shadows. Back side to include contact details with minimalist gold or white icons. Maintain a clean, breathable, luxury layout",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/.webp",
+      imageUrl: "/images/visicard3.webp",
+    },
+    {
+      prompt: "Create a bold and eye-catching hoarding design for New Gurukul Coaching Institute, emphasizing quality education and personal guidance. Use a modern and clean educational layout with elements like books, graduation cap, focused students, and success graph. Highlight key phrases like: 'Admission Open – 2025!' 'Specialized Coaching for Std. 8 to 12 (GSEB & CBSE)' 'Science | Commerce | Foundation Batch for NEET/JEE' '100% Concept Clarity with Expert Faculties' 'Regular Tests | Doubt Sessions | Personal Attention' ✨ Add a motivational quote at the top: 'Gyaan thi Gaurav sudhi no Safar – Start Today!' 🎨 Colors: Use educational & trust-building colors like navy blue, orange, white, and green. 📌 Include institute details clearly at the bottom: Full Address Contact Number 'Visit Us Today' or 'Enroll Now' CTA in button style 🖼 Background should have soft gradients or a subtle image of a classroom/library with transparent overlay for text readability.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/school.webp",
     },
     {
       prompt: "",
