@@ -353,18 +353,18 @@ const Work = () => {
       imageUrl: "/images/me6.webp",
     },
     {
-      prompt: "",
+      prompt: "Generate a black and white closeup portrait showing just the right side of the man's face, emerging from water. His skin and hair should be wet, with visible water droplets and small bubbles. Use dramatic lighting to highlight the illuminated side while leaving the other side in deep shadow. Emphasize the texture of his skin, beard stubble, and sharp eye detail. The mood should feel intense and cinematic, with a dark, minimal background.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/.webp",
+      imageUrl: "/images/me7.webp",
     },
     {
-      prompt: "",
+      prompt: "A cinematic portrait of a man standing against a textured wall, with golden sunlight casting dramatic shadows through window blinds across his face and body. It's lightly raining, and the soft raindrops are barely visible as they fall through the golden light. The lighting adds a warm, moody tone while the shadows create stylish lines over his face, highlighting his expression. The background remains softly blurred, emphasizing the subject's form and texture.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/.webp",
+      imageUrl: "/images/me8.webp",
     },
     {
       prompt: "",
