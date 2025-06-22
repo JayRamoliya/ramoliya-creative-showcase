@@ -395,11 +395,11 @@ const Work = () => {
       imageUrl: "/images/me12.webp",
     },
     {
-      prompt: "",
+      prompt: "A cinematic portrait of a man standing against a textured wall, with golden sunlight casting dramatic shadows through window blinds across his face and body. It's lightly raining, and the soft raindrops are barely visible as they fall through the golden light. The lighting adds a warm, moody tone while the shadows create stylish lines over his face, highlighting his expression. The background remains softly blurred, emphasizing the subject's form and texture.",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/me.webp",
+      imageUrl: "/images/me13.webp",
     },
     {
       prompt: "",
