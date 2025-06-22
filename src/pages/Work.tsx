@@ -406,21 +406,21 @@ const Work = () => {
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/me.webp",
+      imageUrl: "/images/.webp",
     },
     {
       prompt: "",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/me.webp",
+      imageUrl: "/images/.webp",
     },
     {
       prompt: "",
       title: "",
       description: "",
       tools: [],
-      imageUrl: "/images/me.webp",
+      imageUrl: "/images/.webp",
     },
   ];
 
