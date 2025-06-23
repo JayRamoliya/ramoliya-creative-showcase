@@ -402,6 +402,27 @@ const Work = () => {
       imageUrl: "/images/me13.webp",
     },
     {
+      prompt: "Create a cinematic, vintage-toned photo featuring the same person from the reference image. He stands confidently, leaning slightly back against a railing, smiling while surrounded by a crowd of enthusiastic people holding smartphones and cameras as if he's a celebrity. The man wears round black sunglasses, a dark olive-green double-breasted blazer, and cream-colored wide-leg trousers with hands in pockets. The overall style should reflect 1960s-1970s paparazzi aesthetics with rich, warm sepia tones and dra-matic soft lighting. Capture a candid, joyful, high-fashion moment, ultra-realistic, editorial quality.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/me14.webp",
+    },
+    {
+      prompt: "Create a dramatic, cinematic portrait of a man with an intense expression, seated with his hand resting thoughtfully below his chin. His hair is thick, dark, and stylishly tousled, with a subtle wave at the front. The lighting is split-tone: a deep, moody red bathes the left side of his face and hand, while a soft teal-green glow highlights the right, creating a striking high-contrast aesthetic. His skin is smooth, with a clean, sharp jawline and defined brows enhancing his intense gaze. The background is textured and dark, adding a mysterious depth to the frame. He wears a plain dark turtleneck, which merges with the shadows, ensuring the focus remains on his illuminated face and thoughtful pose. The overall look is artistic, modern noir, emotionally charged, and full of character.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/me15.webp",
+    },
+    {
+      prompt: "Create a realistic image of a confident young man standing next to Virat Kohli. Both are leaning casually on a luxury sports car (like a black Mustang or red Ferrari), wearing stylish casual outfits—fitted T-shirts, ripped jeans, and sunglasses. The background is a city street at sunset with dramatic lighting, giving a cinematic, high-attitude vibe. Both have serious, cool expressions, arms folded or one hand in pocket. Add a slight breeze effect to their hair and clothes for a dynamic look.",
+      title: "",
+      description: "",
+      tools: [],
+      imageUrl: "/images/me16.webp",
+    },
+    {
       prompt: "",
       title: "",
       description: "",
